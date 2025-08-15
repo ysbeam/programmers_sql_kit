@@ -19,7 +19,7 @@ IN 문법: WHERE 절에서 여러 개의 값 중 하나라도 일치하는지를
 SELECT DR_NAME, DR_ID, MCDP_CD, DATE_FORMAT(HIRE_YMD, '%Y-%m-%d') AS HIRE_YMD FROM DOCTOR WHERE MCDP_CD IN('CS', 'GS') ORDER BY HIRE_YMD DESC, DR_NAME
 
 /*
-#4 12세 이하인 여자 환자 목록 출력하기
+[#4 12세 이하인 여자 환자 목록 출력하기]
 풀이 1. IF문, ISNULL 함께 사용: 컬럼이 NULL인지 검사해서 조건에 따라 값을 반환
         IF(ISNULL(칼럼명), 참일 때 값, 거짓일 때 값)
 
